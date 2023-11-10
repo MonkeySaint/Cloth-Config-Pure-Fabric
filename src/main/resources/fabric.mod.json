@@ -1,0 +1,41 @@
+{
+    "schemaVersion": 1,
+    "id": "cloth-config",
+    "name": "Cloth Config v12",
+    "description": "An API for config screens.",
+    "version": "${version}",
+    "authors": [
+        "shedaniel"
+    ],
+    "contact": {
+        "homepage": "https://minecraft.curseforge.com/projects/cloth-config",
+        "sources": "https://github.com/shedaniel/ClothConfig",
+        "issues": "https://github.com/shedaniel/ClothConfig/issues"
+    },
+    "license": "GNU LGPLv3",
+    "icon": "icon.png",
+    "entrypoints": {
+        "client": [
+            "me.shedaniel.autoconfig.example.ExampleInits::exampleCommonInit"
+        ],
+        "modmenu": [
+            "me.shedaniel.clothconfig2.fabric.ClothConfigModMenuDemo"
+        ]
+    },
+    "provides": [
+        "cloth-config2"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14.0",
+        "minecraft": ">=1.20-"
+    },
+    "accessWidener": "cloth-config.accessWidener",
+    "custom": {
+        "modmenu": {
+            "badges": [ "library" ]
+        },
+        "catalogue": {
+            "configFactory": "me.shedaniel.clothconfig2.fabric.ClothConfigCatalogueDemo"
+        }
+    }
+}
